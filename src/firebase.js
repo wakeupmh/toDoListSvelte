@@ -1,16 +1,14 @@
-import firebase from 'firebase/app';// rollup bundle issue with ESM import
+import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 var firebaseConfig = {
-  apiKey: "AIzaSyCNGXNpOeRLQcJnuSgUXLv8sWcPhvJfyVA",
-  authDomain: "fireship-lessons.firebaseapp.com",
-  databaseURL: "https://fireship-lessons.firebaseio.com",
-  projectId: "fireship-lessons",
-  storageBucket: "fireship-lessons.appspot.com",
-  messagingSenderId: "758773997881"
+  apiKey: "<yourApiKey>",
+  authDomain: "<yourAuthDomain>",
+  databaseURL: "<yourDatabaseURL>",
+  projectId: "<yourProjectId>",
+  storageBucket: "<yourStorageBucket>",
+  messagingSenderId: "<yourMessagingSenderId>"
 };
-
-console.log(firebase)
 
 firebase.initializeApp(firebaseConfig);
 
